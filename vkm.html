@@ -50,8 +50,21 @@
     <footer>
         ❤️
     </footer>
+    <audio id="myAudio" loop controls>
+  <source src="images/AudioCutter_Kishore_Kumar_-_Zindagi_Ek_Safar_Hai_Suhana_Male_Version_(mp3.pm).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // This helps bypass some browser blocks by trying to play on first click
+  document.body.addEventListener('click', function() {
+      var audio = document.getElementById('myAudio');
+      audio.play();
+  }, { once: true });
+</script>
 </body>
 
 </html>
+
 
 
