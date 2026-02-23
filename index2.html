@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        /* This makes your site content fill the entire screen */
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <!-- Persistent Music Player -->
+    <audio id="bg-music" src="images/AudioCutter_Kishore_Kumar_-_Zindagi_Ek_Safar_Hai_Suhana_Male_Version_(mp3.pm).mp3" autoplay loop></audio>
+
+    <!-- Content Area: Replace 'home.html' with your actual homepage name -->
+    <iframe src="home.html" name="content-frame"></iframe>
+
+    <script>
+        // Modern browsers block autoplay; this plays music on the user's first click
+        document.body.addEventListener('click', () => {
+            document.getElementById('bg-music').play();
+        }, { once: true });
+    </script>
+  <nav>
+    <ul style="display: flex; list-style: none; gap: 20px; background: #333; padding: 10px;">
+        <!-- Crucial: target="content-frame" keeps the music playing -->
+        <li><a href="index.html" target="content-frame" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="vkm.html" target="content-frame" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="pkm.html" target="content-frame" style="color: white; text-decoration: none;">Contact</a></li>
+        <li><a href="bb.html" target="content-frame" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="tau.html" target="content-frame" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="am.html" target="content-frame" style="color: white; text-decoration: none;">Home</a></li>
+      <li><a href="rs.html" target="content-frame" style="color: white; text-decoration: none;">Home</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
