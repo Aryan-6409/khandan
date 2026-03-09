@@ -47,7 +47,6 @@ h1 {
     box-shadow: 0 4px 8px rgb(0,0,0,0.2);
     width: 300px;
     transition: transform 0.3s;
-    align-items: center;
 }
 
 .photo-card:hover {
@@ -76,4 +75,5 @@ footer {
     margin-top: 2em;
 
 }
+
 
