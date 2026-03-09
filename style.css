@@ -2,6 +2,7 @@ body {
     font-family: "comic sans ms",cursive,sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('images/360_F_310762395_jZC0z3HGxwiM7kYo6K0ZG2dsECFtEhGn.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,5 +76,6 @@ footer {
     margin-top: 2em;
 
 }
+
 
 
